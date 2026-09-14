@@ -1,0 +1,1 @@
+var e=`Dokumentace`,t=`Na této stránce`,n=`Upravit tuto stránku na GitHubu`,r=`Vykresleno z {{file}}`,i={title:e,onThisPage:t,edit:n,source:r};export{i as default,n as edit,t as onThisPage,r as source,e as title};

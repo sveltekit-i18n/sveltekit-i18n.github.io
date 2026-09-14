@@ -1,0 +1,1 @@
+var e=`Documentation`,t=`On this page`,n=`Edit this page on GitHub`,r=`Rendered from {{file}}`,i={title:e,onThisPage:t,edit:n,source:r};export{i as default,n as edit,t as onThisPage,r as source,e as title};
