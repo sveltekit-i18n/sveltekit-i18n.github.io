@@ -1,1 +1,0 @@
-var e=[`en`,`cs`,`de`];({...Object.fromEntries(Object.entries({"getting-started":`GETTING_STARTED.md`,api:`README.md`,architecture:`ARCHITECTURE.md`,"best-practices":`BEST_PRACTICES.md`,troubleshooting:`TROUBLESHOOTING.md`}).map(([e,t])=>[t,`/docs/${e}`]))});var t=`https://github.com/sveltekit-i18n/lib`;export{t as n,e as t};

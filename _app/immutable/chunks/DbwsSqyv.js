@@ -1,1 +1,0 @@
-import{t as e}from"./CR0MHrwF.js";var t=e.filter(e=>e!==`en`),n=e=>t.find(t=>e===`/${t}`||e.startsWith(`/${t}/`))??`en`,r=e=>e===`en`?``:`/${e}`,i=(e,t)=>e.slice(r(t).length)||`/`;export{i,n,r,t};
