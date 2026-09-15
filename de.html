@@ -4,20 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="data:," />
-    <link href="./_app/immutable/entry/start.hFg6ONkI.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CtTPDQEz.js" rel="modulepreload">
+    <link href="./_app/immutable/entry/start.B7ojDmLa.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Cu2fN4KH.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/B2_R-pJi.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.ClIUqxJ2.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.B3OZbSAk.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/uBIymjUX.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/CyW4h9j-.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/DCxvwHE_.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.BouY5_EC.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.CSwwMbMx.js" rel="modulepreload">
 		<link href="./_app/immutable/chunks/6Ciu9iOV.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CNeyqxDl.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dr0Ocj8D.js" rel="modulepreload">
 		<link href="./_app/immutable/nodes/2.eLyV0nTd.js" rel="modulepreload">
 		<!--ol39d6--><meta name="description" content="Internationalisierung für SvelteKit"/><!----><title>sveltekit-i18n</title>
-		<link href="./_app/immutable/assets/0.CvfCf1bm.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.DM6-1n7S.css" rel="stylesheet">
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents"><!--[--><!--[0--><!--[--><a class="skip" href="#main">Skip to content</a> <a class="banner" href="https://github.com/sveltekit-i18n/lib/tree/2.x" rel="noreferrer">Dies ist die Dokumentation für v3. Für die v2-Reihe siehe den Branch 2.x.</a> <header><a class="brand" href="/de"><strong>sveltekit-i18n</strong> <span>Internationalisierung für SvelteKit</span></a> <nav><a href="/de">Startseite</a> <a href="/de/docs">Dokumentation</a> <a href="/de/examples">Beispiele</a> <a href="/de/playground">Spielwiese</a> <a href="https://github.com/sveltekit-i18n/lib" rel="noreferrer">GitHub</a></nav></header> <main id="main"><!--[--><section class="hero"><h1>sveltekit-i18n</h1> <p class="tagline">Internationalisierung für SvelteKit</p> <!----><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> sveltekit-i18n</span></span></code></pre><!----> <p class="cta"><a class="button" href="/de/docs">Dokumentation lesen</a> <a href="https://github.com/sveltekit-i18n/lib" rel="noreferrer">GitHub</a></p> <p class="requirements">Svelte 5 und Node 22, Bun 1.2 oder Deno 2 oder neuer. Nur ESM.</p></section> <section class="features"><h2>Warum sveltekit-i18n</h2> <ul><!--[--><li><strong>Für SvelteKit gebaut</strong> <span>Eine Instanz pro Anfrage, damit die Sprache eines Besuchers nie auf die Seite eines anderen gerät.</span></li><li><strong>Eine Installation</strong> <span>Kern und Curly-Parser sind dabei. Nichts weiter hinzuzufügen, und nur ein reaktiver Graph.</span></li><li><strong>Lädt, was eine Route braucht</strong> <span>Ein Loader läuft, wenn Sprache und Route passen — einmal pro Gültigkeitsfenster.</span></li><li><strong>Eine reaktive Instanz</strong> <span>Svelte-5-Runes statt Stores: Eigenschaften werden gelesen, Methoden awaited.</span></li><li><strong>Typisierte Schlüssel und Parameter</strong> <span>Ein schema-Slot verengt, was t() und l() annehmen — bis zu den Parametern jeder Nachricht.</span></li><li><strong>Erweiterbar</strong> <span>Die extensions-Pipe legt weitere Oberflächen auf die Instanz — etwa Svelte-Stores.</span></li><!--]--></ul></section> <section class="start"><h2>Schnellstart</h2> <ol><li><p>Beschreibe die Übersetzungen, die die App lädt.</p> <!----><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// src/lib/translations/index.js</span></span>
@@ -41,19 +41,19 @@
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> onclick</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">={() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { i18n.locale </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'cs'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }}></span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  {i18n.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">t</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'common.switch'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)}</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre><!----></li></ol> <p><a href="/de/docs/getting-started">Der vollständige Einstiegsleitfaden</a></p></section><!--]--><!----></main> <footer><a href="https://github.com/sveltekit-i18n/lib/blob/master/LICENSE" rel="noreferrer">MIT</a> <a href="https://github.com/sveltekit-i18n/lib/issues" rel="noreferrer">Issues</a> <a href="https://github.com/sponsors/sveltekit-i18n" rel="noreferrer">Sponsor</a> <label class="language">Sprache <select><!--[--><option value="en">English</option><option value="cs">Čeština</option><option value="de" selected="">Deutsch</option><!--]--></select></label></footer><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre><!----></li></ol> <p><a href="/de/docs/getting-started">Der vollständige Einstiegsleitfaden</a></p></section><!--]--><!----></main> <footer><a href="https://github.com/sveltekit-i18n/lib/blob/master/LICENSE" rel="noreferrer">MIT</a> <a href="https://github.com/sveltekit-i18n/lib/issues" rel="noreferrer">Issues</a> <iframe class="sponsor" src="https://github.com/sponsors/sveltekit-i18n/button" title="Sponsor sveltekit-i18n" height="32" width="114" loading="lazy"></iframe> <label class="language">Sprache <select><!--[--><option value="en">English</option><option value="cs">Čeština</option><option value="de" selected="">Deutsch</option><!--]--></select></label></footer><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_bzcohr = {
+					__sveltekit_g9txul = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./_app/immutable/entry/start.hFg6ONkI.js"),
-						import("./_app/immutable/entry/app.ClIUqxJ2.js")
+						import("./_app/immutable/entry/start.B7ojDmLa.js"),
+						import("./_app/immutable/entry/app.B3OZbSAk.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
